@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: futura; */
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.parkinsans-<uniquifier> {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#page1 {
+    padding: 5vh 0vw 5vh 8vw;
+    /* background-color: red; */
+    background-image:  url(./love-hearts-red-heart-white-heart-wooden-background-5k-3840x2160-710.jpg);
+    background-size: cover;
+    /* opacity: 0.7; */
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+}
+
+#heart {
+    position: absolute;
+    /* z-index: -10; */
+    filter: blur(10px);
+    height: 180px;
+    width: 200px;
+    animation: heart-anime 10s infinite;
+    /* background-color: #ff3737; */
+    /* transform: rotate(45deg); */
+}
+
+@keyframes heart-anime {
+    0% {
+        left: 0;
+        bottom: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        left: 40%;
+        bottom: 50%;
+        transform: scale(1.2);
+    }
+
+    100% {
+        left: -20%;
+        bottom: 0;
+        transform: scale(1);
+    }
+}
+
+#heart::before,
+#heart::after {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    width: 100px;
+    height: 180px;
+    background-color: #ff3737;
+    border-radius: 50%;
+}
+
+#heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#left {
+    padding: 15vh 0 10vh 0;
+    width: 60%;
+}
+
+#left-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    align-items: center;
+}
+
+#left h1 {
+    font-size: 9.3vh;
+    line-height: 10vh;
+    font-weight: 700;
+    color: #111;
+    font-family: Parkinsans;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#left p {
+    margin-top: 3vh;
+    color: #111;
+    font-family: poppins;
+    line-height: 2.5vw;
+    letter-spacing: 1px;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#left-left button {
+    border: none;
+    background-color: #e6d2d2;
+    padding: 2.2vh 3.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#left-left button h5 {
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#left-left button a{
+    text-decoration: none;
+    font-family: poppins;
+    color: #111;
+    
+}
+#left-left button a:hover{
+    transform: scale(1.1);
+}
+#right {
+    padding: 5vh 5vw;
+    width: 40%;
+}
+
+#right img {
+    height: 90vh;
+    width: auto;
+}
+
+#page2 {
+    background-color: #d2c5c5;
+    height: 80vh;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2c5c5;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 15vh 5vw;
+}
+
+#leftC img {
+    height: 35vw;
+    width: auto;
+}
+
+#rightC p {
+    font-weight: 400;
+    font-size: 1.5vw;
+    font-family: poppins;
+}
+
+#page3 {
+    position: relative;
+    background-image: url(./gift-box-red-hearts-3840x2160-11417.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+#page3 p {
+    width: 50%;
+    padding: 10vh 5vw;
+    color: #e9c9c9;
+    font-family: Parkinsans;
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+#page4 {
+    background-color: #d2c5c5;
+    padding: 5vh 5vw;
+    height: 100vh;
+    width: 100%;
+}
+
+#page4 h2 {
+    font-size: 3.5vw;
+    font-family: poppins;
+    text-transform: capitalize;
+}
+
+#rev {
+    margin-top: 2vh;
+    width: 100%;
+    background-color: rgb(231, 121, 121);
+    padding: 3vh 5vw;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.rev-text h5 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-family: poppins;
+    text-align: right;
+    padding-right: 6.65vw;
+}
+
+#rev p {
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: ParkinSans;
+}
+
+#scroller {
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller h4 {
+    font-size: 5.5vw;
+    display: inline-block;
+    margin-right: 2.5vw;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #111;
+    -webkit-text-stroke: 2px fff;
+    transition: all linear 0.4s;
+}
+
+#scroller h4:hover {
+    color: #efb4b4;
+    -webkit-text-stroke: 2px red;
+}
+
+.scroller-in-1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+@media screen and (max-width:600px) {
+    #main{
+        overflow-x: hidden;
+    }
+    #page1 {
+        width: 100vw;
+        padding: 0vh 0vw 0vh 2vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    #left {
+        padding: 0vh 0 0vh 0;
+        width: 100%;
+    }
+    
+    #left-left {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: center;
+    }
+    
+    #left h1 {
+        font-size: 8.5vw;
+        line-height: 5vh;
+        font-weight: 700;
+        color: #111;
+        font-family: Parkinsans;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
+    
+    #left p {
+        padding: 0 2vw 0 2vw;
+        margin-top: 5.8vh;
+        line-height: 4vw;
+        letter-spacing: 1px;
+        font-size: 3.0vw;
+    }
+    
+    #left-left button {
+        padding: 2vh 5.5vw;
+        border-radius: 15px;
+    }
+    
+    #left-left button h5 {
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #right {
+        padding: 5vh 0 0vw 3vw;
+        width: 65%;
+    }
+    
+    #right img {
+        height: 50vh;
+        width: auto;
+    }
+    #page2 {
+        background-color: #d2c5c5;
+        height: 60vh;
+    }
+    
+    #content {
+        width: 90%;
+        height: 100%;
+        padding: 15vh 0vw;
+    }
+    
+    #leftC img {
+        height: 35vw;
+        width: auto;
+    }
+    
+    #rightC p {
+        font-weight: 400;
+        font-size: 2.8vw;
+        font-family: poppins;
+    }
+    #page3 {
+        position: relative;
+        background-image: url(./gift-box-red-hearts-3840x2160-11417.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 60vh;
+    }
+    
+    #page3 p {
+        width: 70%;
+        padding: 10vh 5vw 10vh 0;
+        color: #e9c9c9;
+        font-family: Parkinsans;
+        font-weight: 600;
+        font-size: 5vw;
+    }
+    page4 {
+        padding: 5vh 0vw;
+        width: 100%;
+    }
+    
+    #page4 h2 {
+        font-size: 5.5vw;
+        font-family: poppins;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+    
+    #rev {
+        height: 75vh;
+        margin-top: 2vh;
+        width: 100%;
+        padding: 3vh 2vw;
+    }
+    
+    .rev-text h5 {
+        font-size: 3.5vw;
+        font-weight: 200;
+        padding-right: 0vw;
+    }
+    
+    #rev p {
+        font-size: 3.130vw;
+    }
+    
+    
+}
